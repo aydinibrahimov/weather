@@ -1,0 +1,17 @@
+
+server:
+  port: 1010
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/msd_db?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      globally_quoted_identifiers: true
+    generate-ddl: true
+
