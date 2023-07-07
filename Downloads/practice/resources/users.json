@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "name": "Bird ",
+        "surname": "Ramsey",
+        "phone": "23589465",
+        "email": "birdrsey@nimon.com",
+        "insType": "Əmlak",
+        "insAmount": "5000",
+        "property": "Biznes"
+    },
+    {
+        "id": 2,
+        "name": "Lillian ",
+        "surname": "Burgess",
+        "phone": "96589465",
+        "email": "inburgess@luria.com",
+        "insType": "Əmlak",
+        "insAmount": "9000",
+        "property": "Fərdi"
+    },
+    {
+        "id": 3,
+        "name": "Kristie Cole",
+        "surname": "Burgess",
+        "phone": "3464779734",
+        "email": "kriole@quado.com",
+        "insType": "Tibbi",
+        "insAmount": "1500",
+        "property": "Biznes"
+    },
+    {
+        "id": 4,
+        "name": "Leonor ",
+        "surname": "Cross",
+        "phone": "534678886",
+        "email": "leonross@gronk.com",
+        "insType": "Səyahət",
+        "insAmount": "3200",
+        "property": "Fərdi"
+    },
+    {
+        "id": 5,
+        "name": "Marsh ",
+        "surname": "Mccall",
+        "phone": "345598755",
+        "email": "marshll@ultrax.com",
+        "insType": "Avtomobil",
+        "insAmount": "750",
+        "property": "Biznes"
+    },
+    {
+        "id": 6,
+        "name": "Sakur ",
+        "surname": "Burgess",
+        "phone": "12389465",
+        "email": "inburgess@luria.com",
+        "insType": "Avtomobil",
+        "insAmount": "7000",
+        "property": "Fərdi"
+    },
+    {
+        "id": 7,
+        "name": "PAtya ",
+        "surname": "Burgess",
+        "phone": "98789465",
+        "email": "inburgess@luria.com",
+        "insType": "Əmlak",
+        "insAmount": "3003",
+        "property": "Fərdi"
+    },
+    {
+        "id": 8,
+        "name": "Xaruq ",
+        "surname": "Burgess",
+        "phone": "8524465",
+        "email": "inburgess@luria.com",
+        "insType": "Əmlak",
+        "insAmount": "2589",
+        "property": "Biznes"
+    },
+    {
+        "id": 9,
+        "name": "Mahuk ",
+        "surname": "Burgess",
+        "phone": "3339465",
+        "email": "inburgess@luria.com",
+        "insType": "Səyahət",
+        "insAmount": "4444",
+        "property": "Biznes"
+    },
+    {
+        "id": 10,
+        "name": "TUYIUan ",
+        "surname": "Burgess",
+        "phone": "22589465",
+        "email": "inburgess@luria.com",
+        "insType": "Əmlak",
+        "insAmount": "1111",
+        "property": "Fərdi"
+    },
+    {
+        "id": 11,
+        "name": "ATgbkuj ",
+        "surname": "Burgess",
+        "phone": "6549465",
+        "email": "inburgess@luria.com",
+        "insType": "Tibbi",
+        "insAmount": "22222",
+        "property": "Biznes"
+    }
+]

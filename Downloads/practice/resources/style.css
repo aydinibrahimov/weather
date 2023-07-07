@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+
+.sidebar {
+    padding-left: 0;
+    margin-left: 0;
+    gap: 0;
+}
+
+.nano img {
+
+    width: 26px;
+    height: 23px;
+    justify-content: center;
+    align-content: center;
+    text-align: justify;
+}
+
+.nano #listTitle {
+    font-weight: 700;
+    font-size: large;
+    text-align: left;
+
+}
+
+.nano #listTitle ul li {
+    font-size: medium;
+    font-weight: 500;
+    text-align: left;
+
+}
+
+#toolbar {
+    margin-top: 10px;
+}
+
+#toolbar img {
+    color: azure;
+    width: 25px;
+    height: 25px;
+}
+
+#toolbarExcel {
+    margin-top: 10px;
+}
+
+#toolbarExcel img {
+    color: azure;
+    width: 25px;
+    height: 25px;
+}
+#toolbarTrash {
+    margin-top: 10px;
+}
+
+#toolbarTrash img {
+    color: azure;
+    width: 25px;
+    height: 25px;
+}
+#gridTable tr:hover td {
+    background-color: rgb(28, 169, 136);
+}
+
+.selected {
+    background-color: #bf1515;
+  }
+  
+
+#gridTabletbody tr:hover td {
+    background-color: #d10c0c;
+  }
+  
+
+#gridTable  tbody tr.selected td {
+    background-color: #0c95d9;
+  }
+  
+
+#gridTable  tbody tr.selected:hover td {
+    background-color: #7cf906;
+  }
+
+#listUl {
+    list-style: none;
+    width: 100%;
+    height: 550px;
+    border: 3px solid rgba(0, 0, 0, 0.173);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-left: 0;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 25px;
+    
+}
+
+
+
+#detailslist h5 {
+
+    opacity: 90%;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    padding-top: 18px;
+
+}
+
+#detailslist span {
+    opacity: 100%;
+    font-size: 16px;
+    padding-top: 0px;
+  
+
+}
