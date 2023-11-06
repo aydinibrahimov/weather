@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 
 import java.security.Key;
+import java.time.ZonedDateTime;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -23,7 +24,7 @@ public class JwtService {
     @Value("${app.secret-key}")
     private String secretKey;
     @Value("${app.expires-date-min}")
-    private int expirationDate;
+    private Integer expirationDate;
 
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
@@ -39,9 +40,17 @@ public class JwtService {
         return (username.equals(userDetails.getUsername())) && !isTokenExpired(token);
     }
 
-    private boolean isTokenExpired(String token) {
-        return extractExpiration(token).before(new Date());
-    }
+//    private boolean isTokenExpired(String token) {
+//        return extractExpiration(token).before(new Date());
+//    }
+public boolean isTokenExpired(String token) {
+    Claims claims = Jwts.parserBuilder()
+            .setSigningKey(getSignKey())
+            .build()
+            .parseClaimsJws(token)
+            .getBody();
+    return !claims.getExpiration().before(new Date());
+}
 
     private Date extractExpiration(String token) {
         return extractClaim(token, Claims::getExpiration);
@@ -57,14 +66,14 @@ public class JwtService {
                 .setClaims(extractClaims)
                 .setSubject(userDetails.getUsername())
                 .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 24))
+                .setExpiration(Date.from(ZonedDateTime.now().plusMinutes(expirationDate).toInstant()))
                 .signWith(getSignKey(), SignatureAlgorithm.HS256)
                 .compact();
     }
 
     private Claims extractAllClaims(String token) {
         return Jwts
-                .parser()
+                .parserBuilder()
                 .setSigningKey(getSignKey())
                 .build()
                 .parseClaimsJws(token)
