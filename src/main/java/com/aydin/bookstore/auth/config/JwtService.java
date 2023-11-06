@@ -8,7 +8,9 @@ import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
+
 
 import java.security.Key;
 import java.util.Date;
@@ -19,10 +21,10 @@ import java.util.function.Function;
 @Service
 public class JwtService {
 
-    @Value("${application.security.jwt.secret-key}")
+    @Value("${app.secret-key}")
     private String secretKey;
-    @Value("${application.security.jwt.expiration}")
-    private Date expirationDate;
+    @Value("${app.expires-date-min}")
+    private int expirationDate;
 
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
