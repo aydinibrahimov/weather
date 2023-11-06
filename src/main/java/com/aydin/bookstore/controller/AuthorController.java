@@ -7,13 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
 
-@RestController
+@RestController("/bookstore/v1/author")
 @RequestMapping
 public class AuthorController {
     @GetMapping
-    public String getData(){
-        List<String> list =new ArrayList<>();
-         return "";
+    public String getData() {
+        return "Salam Java";
     }
 
 }

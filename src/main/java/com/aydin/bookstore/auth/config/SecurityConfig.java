@@ -24,7 +24,7 @@ public class SecurityConfig {
         httpSecurity.csrf()
                 .disable()
                 .authorizeHttpRequests()
-                .requestMatchers("")
+                .requestMatchers("/bookstore/v1/auth/**")
                 .permitAll()
                 .anyRequest()
                 .authenticated()

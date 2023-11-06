@@ -1,4 +1,4 @@
-package com.aydin.bookstore.auth;
+package com.aydin.bookstore.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
@@ -25,6 +25,7 @@ public class User implements UserDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private int age;
     @Email
     private String email;
     @Size(min = 8, max = 85)

@@ -1,5 +1,6 @@
-package com.aydin.bookstore.auth;
+package com.aydin.bookstore.repository;
 
+import com.aydin.bookstore.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
