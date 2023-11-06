@@ -28,7 +28,7 @@ public class User implements UserDetails {
     private int age;
     @Email
     private String email;
-    @Size(min = 8, max = 85)
+    //@Size(min = 8, max = 85)
     private String password;
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)

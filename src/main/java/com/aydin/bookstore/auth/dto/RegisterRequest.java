@@ -17,7 +17,7 @@ public class RegisterRequest {
     @NotNull
     private String name;
     private int age;
-    private String role;
+    private Role role;
     @Email
     @NotNull
     private String email;
