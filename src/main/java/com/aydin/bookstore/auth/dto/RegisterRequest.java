@@ -17,10 +17,10 @@ public class RegisterRequest {
     @NotNull
     private String name;
     private int age;
+    @NotNull
     private Role role;
     @Email
     @NotNull
     private String email;
-    @Size(min = 8, max = 21)
     private String password;
 }

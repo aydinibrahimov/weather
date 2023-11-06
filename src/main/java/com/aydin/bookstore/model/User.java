@@ -2,7 +2,7 @@ package com.aydin.bookstore.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -24,13 +24,12 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
-    private int age;
-    @Email
+
+    @Email(message = "Invalid email format")
+    @NotBlank(message = "Email can not be empty")
     private String email;
-    //@Size(min = 8, max = 85)
     private String password;
-    @Column(nullable = false)
+    private int age;
     @Enumerated(EnumType.STRING)
     private Role role;
 
