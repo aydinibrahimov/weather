@@ -67,7 +67,7 @@ public class AuthenticationService {
         );
 
         var user = userRepository.findByEmail(request.getEmail())
-                .orElseThrow(()->new IllegalArgumentException("There was an error with your E-mail/Password combination. Please try again."));
+                .orElseThrow(()->new IllegalArgumentException("There was an error with your E-mail/Password combination."));
 
         var jwtToken = jwtService.generateToken(user);
         return AuthenticationResponse
