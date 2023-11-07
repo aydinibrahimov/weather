@@ -21,6 +21,7 @@ public class SecurityConfig {
     private final AuthenticationProvider authenticationProvider;
 
     private static final String[] AUTH_WHITELIST = {
+            "/bookstore/v1/auth/**",
             "/v2/api-docs",
             "/swagger-ui.html",
             "/swagger-resources",
